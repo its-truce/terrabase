@@ -8,6 +8,7 @@ from urllib.request import urlopen
 import urllib.request
 from datetime import datetime
 
+
 def markdown_links(tag: bs4.Tag):
     for img in tag.find_all('img'):
         img.decompose()
@@ -17,7 +18,11 @@ def markdown_links(tag: bs4.Tag):
         link.replace_with(f'[{link_text}](https://terraria.wiki.gg{href})')
     for a in tag.find_all('a'):
         a.unwrap()
-    return tag.text
+    if len(tag.text) > 1024:
+        return tag.text[:1023]
+    else:
+        return tag.text
+
 
 async def scrape(search):
     caps = string.capwords(search, sep=None)
@@ -42,5 +47,6 @@ async def scrape(search):
     f = BytesIO(respi.read())
     done = datetime.now()
     print(done - now)
+
 
 # asyncio.run(scrape(str(input("Page to search for: "))))
