@@ -11,7 +11,7 @@ I would prefer it if you don't run an instance of my bot. It can be invited usin
   # Making a venv:
   python3 -m venv venv
   ```
-* Installing the requirements. This is simply:
+* Install the requirements. This is simply:
   ```py
   # Installing dependencies:
   pip install -U -r requirements.txt
