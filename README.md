@@ -1,5 +1,5 @@
 # Terrabase 🌳
-Terrabase in a discord bot made to look up things on the wiki on the go: You can view anything available on the wiki without ever leaving Discord. This is mainly useful when you're talking with friends about Terraria and need to show them something. It's written in [`Python`](https://www.python.org/) using the [`discord.py`](https://github.com/Rapptz/discord.py) library.
+Terrabase is a discord bot made to look up things on the wiki on the go: You can view anything available on the wiki without ever leaving Discord. This is mainly useful when you're talking with friends about Terraria and need to show them something. It's written in [`Python`](https://www.python.org/) using the [`discord.py`](https://github.com/Rapptz/discord.py) library.
 
 # Installing & Running 🤖
 I would prefer it if you don't run an instance of my bot. It can be invited using this [link](https://discord.com/api/oauth2/authorize?client_id=1069569059257077840&permissions=517543938112&scope=bot). If you still want to run an instance of my bot, however, here's how you can do it:
@@ -16,7 +16,4 @@ I would prefer it if you don't run an instance of my bot. It can be invited usin
   # Installing dependencies:
   pip install -U -r requirements.txt
   ```
-* Enter your bot's token in the [`config.py`](https://github.com/its-truce/CaveMonkey/blob/main/main/config.py) file.
-
-# Other 📖
-**NOTE:** The bot currently contains blocking functions (bs4). BS4 is blazingly fast so this shouldn't be an issue normally, but I'm working on transferring it to `asyncio.to_thread() currently.
+* Enter your bot's token in the [`config.py`](https://github.com/its-truce/terrabase/blob/main/main/config.py) file.
