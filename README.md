@@ -18,4 +18,5 @@ I would prefer it if you don't run an instance of my bot. It can be invited usin
   ```
 * Enter your bot's token in the [`config.py`](https://github.com/its-truce/CaveMonkey/blob/main/main/config.py) file.
 
+# Other 📖
 **NOTE:** The bot currently contains blocking functions (bs4). BS4 is blazingly fast so this shouldn't be an issue normally, but I'm working on transferring it to `asyncio.to_thread() currently.
