@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 import config
 
+
 class Bot(commands.Bot):
     def __init__(self):
         intents = discord.Intents.default()
